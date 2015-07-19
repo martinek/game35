@@ -14,6 +14,7 @@
 		0A2A92991B5A4F3700936B16 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2A92971B5A4F3700936B16 /* LaunchScreen.xib */; };
 		0A2A92A51B5A4F3700936B16 /* game35Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2A92A41B5A4F3700936B16 /* game35Tests.m */; };
 		0A2A92B41B5A50CC00936B16 /* GTFGameScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2A92B31B5A50CC00936B16 /* GTFGameScreenViewController.m */; };
+		0A2A92B71B5A571100936B16 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A2A92B61B5A571100936B16 /* data.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		0A2A92A41B5A4F3700936B16 /* game35Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = game35Tests.m; sourceTree = "<group>"; };
 		0A2A92B21B5A50CC00936B16 /* GTFGameScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFGameScreenViewController.h; sourceTree = "<group>"; };
 		0A2A92B31B5A50CC00936B16 /* GTFGameScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFGameScreenViewController.m; sourceTree = "<group>"; };
+		0A2A92B61B5A571100936B16 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		0A2A92871B5A4F3700936B16 /* game35 */ = {
 			isa = PBXGroup;
 			children = (
+				0A2A92B51B5A570100936B16 /* Resources */,
 				0A2A92AE1B5A4FCD00936B16 /* ViewControllers */,
 				0A2A928C1B5A4F3700936B16 /* AppDelegate.h */,
 				0A2A928D1B5A4F3700936B16 /* AppDelegate.m */,
@@ -125,6 +128,14 @@
 				0A2A92B31B5A50CC00936B16 /* GTFGameScreenViewController.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0A2A92B51B5A570100936B16 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0A2A92B61B5A571100936B16 /* data.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 			files = (
 				0A2A92941B5A4F3700936B16 /* Main.storyboard in Resources */,
 				0A2A92991B5A4F3700936B16 /* LaunchScreen.xib in Resources */,
+				0A2A92B71B5A571100936B16 /* data.plist in Resources */,
 				0A2A92961B5A4F3700936B16 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

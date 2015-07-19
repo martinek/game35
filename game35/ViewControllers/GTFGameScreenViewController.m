@@ -10,6 +10,7 @@
 
 @interface GTFGameScreenViewController ()
 
+@property NSArray *gameScreens;
 @property NSDictionary *currentGameScreen;
 
 @end
@@ -18,17 +19,9 @@
 
 - (void)awakeFromNib {
   [self fixInsets];
+  [self loadGameScreens];
   
-  self.currentGameScreen = @{
-                             @"id": @(1),
-                             @"texts": @[
-                                 @"It is 9:00AM EST. The date is October 14th, 2022.",
-                                 @"Your wife has already....",
-                                 @"She will not...",
-                                 @"You have just woken up..."
-                                 ],
-                              @"next": @(2)
-                             };
+  self.currentGameScreen = [self.gameScreens firstObject];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -52,6 +45,12 @@
 - (void)fixInsets {
   CGFloat statusBarHeight = [[UIApplication sharedApplication] statusBarFrame].size.height;
   self.tableView.contentInset = UIEdgeInsetsMake(statusBarHeight, 0, 0, 0);
+}
+
+- (void)loadGameScreens {
+  NSURL *dataFileURL = [[NSBundle mainBundle] URLForResource:@"data" withExtension:@"plist"];
+  NSDictionary *gameData = [NSDictionary dictionaryWithContentsOfURL:dataFileURL];
+  self.gameScreens = gameData[@"screens"];
 }
 
 @end

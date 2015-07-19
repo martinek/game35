@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>screens</key>
+	<array>
+		<dict>
+			<key>id</key>
+			<integer>1</integer>
+			<key>next</key>
+			<integer>2</integer>
+			<key>texts</key>
+			<array>
+				<string>It is 9:00AM EST. The date is October 14th, 2022.</string>
+				<string>Your wife has already left for New York City to visit her parents.</string>
+				<string>She will not return until October 20th.</string>
+				<string>You have just woken up. You slept for nine hours. You are well rested.</string>
+			</array>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>2</integer>
+			<key>options</key>
+			<array>
+				<dict>
+					<key>next</key>
+					<integer>3</integer>
+					<key>text</key>
+					<string>Eat breakfast</string>
+				</dict>
+				<dict>
+					<key>next</key>
+					<integer>4</integer>
+					<key>text</key>
+					<string>Watch television</string>
+				</dict>
+				<dict>
+					<key>next</key>
+					<integer>5</integer>
+					<key>text</key>
+					<string>Read a book</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>3</integer>
+			<key>options</key>
+			<array>
+				<dict>
+					<key>next</key>
+					<integer>5</integer>
+					<key>text</key>
+					<string>Read a book.</string>
+				</dict>
+			</array>
+			<key>texts</key>
+			<array>
+				<string>You ate eggs and bacon...</string>
+			</array>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>4</integer>
+			<key>next</key>
+			<integer>2</integer>
+			<key>stats</key>
+			<dict>
+				<key>awareness</key>
+				<integer>1</integer>
+			</dict>
+			<key>texts</key>
+			<array>
+				<string>You turned on...</string>
+				<string>The program...</string>
+				<string>Scientists...</string>
+				<string>The Chinese hope...</string>
+			</array>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>5</integer>
+			<key>next</key>
+			<integer>6</integer>
+			<key>stats</key>
+			<dict>
+				<key>intelligence</key>
+				<integer>1</integer>
+			</dict>
+			<key>texts</key>
+			<array>
+				<string>You decided...</string>
+				<string>We hang...</string>
+				<string>Never trust...</string>
+				<string>A doubtful...</string>
+			</array>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>6</integer>
+			<key>options</key>
+			<array>
+				<dict>
+					<key>next</key>
+					<integer>7</integer>
+					<key>text</key>
+					<string>Take the car in</string>
+				</dict>
+				<dict>
+					<key>next</key>
+					<integer>8</integer>
+					<key>text</key>
+					<string>Go to the supermarket</string>
+				</dict>
+				<dict>
+					<key>next</key>
+					<integer>9</integer>
+					<key>text</key>
+					<string>Go to the gym</string>
+				</dict>
+			</array>
+			<key>texts</key>
+			<array>
+				<string>You remember...</string>
+				<string>You also need...</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
